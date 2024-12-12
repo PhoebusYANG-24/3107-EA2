@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>G.E.M. Fun Club</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS stylesheet -->
+    <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
+</head>
+<body>
+    <header>
+        <!-- <h1>G.E.M. Fun Club</h1> -->
+        <nav>
+            <ul class="header"> <!-- Main navigation menu -->
+                <li class="header-star">
+                    <a href="index.html" id="home"><img src="images/head.png" width="150" height="40" alt="Website Logo"></a> <!-- Logo link -->
+                    <a href="https://www.facebook.com/G.E.M.OfficialPage/?locale=zh_HK" class="soc"><img src="images/fb.png" width="32" height="28" alt="Facebook"></a> <!-- Facebook icon -->
+                    <a href="https://www.instagram.com/gem0816/" class="soc"><img src="images/ig.png" width="30" height="28" alt="Instagram"></a> <!-- Instagram icon -->
+                    <a href="https://x.com/gemoving" class="soc"><img src="images/tw.png" width="30" height="28" alt="Twitter"></a> <!-- Twitter icon -->
+                </li>
+                <li class="type"><a href="events.html">Concert</a> <!-- Concert link -->
+                    <ul class="sub"> <!-- Submenu for concert months -->
+                        <li><a href="December.html">December</a></li> <!-- December -->
+                        <li><a href="January.html">January</a></li> <!-- January -->
+                        <li><a href="February.html">February</a></li> <!-- February -->
+                    </ul>
+                </li>
+
+                <li class="type"><a href="Advertising.html">Advertising endorsement</a> <!-- Advertising endorsement link -->
+                    <ul class="sub">
+                        <li><a href="black.html">Pepsi X Black Myth: Wukong</a></li> <!-- Pepsi X Black Myth: Wukong -->
+                        <li><a href="blue.html">Blue Girl Beer</a></li> <!-- Blue Girl Beer -->
+                        <li><a href="red.html">Urban Decay</a></li> <!-- Urban Decay -->
+                    </ul>
+                </li>
+
+                <li class="type"><a href="about.html">About G.E.M.</a> <!-- About G.E.M. link -->
+                    <ul class="sub">
+                        <li><a href="life.html">Personal life</a></li> <!-- Personal life -->
+                        <li><a href="awards.html">Awards</a></li> <!-- Awards -->
+                    </ul>
+                </li>
+                <li class="header-left">
+                    <a href="buy.html"><img src="images/buy.png" width="30" height="30" alt="Buy Merchandise"></a> <!-- Buy merchandise -->
+                    <a href="index_zh.html"><img src="images/chinese.png" width="30" height="30" alt="Switch to Chinese Version"></a> <!-- Switch to Chinese version -->
+                    <a href="login_in.html"><img src="images/login_in.png" width="30" height="30" alt="Login"></a> <!-- Login link -->
+                    <img src="images/menu.png" id="menu" width="30" height="30" alt="Menu" onclick="toggleDisplay('header-sm','menu')"> <!-- Menu toggle icon -->
+                    <ul class="header-sm" id="header-sm"> <!-- Small screen menu -->
+                        <li class="type-sm"><a href="events.html">Concert</a>
+                            <ul class="sub-sm">
+                                <li><a href="December.html">December</a></li> <!-- December -->
+                                <li><a href="January.html">January</a></li> <!-- January -->
+                                <li><a href="February.html">February</a></li> <!-- February -->
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="Advertising.html">Advertising endorsement</a>
+                            <ul class="sub-sm">
+                                <li><a href="black.html">Pepsi X Black Myth: Wukong</a></li> <!-- Pepsi X Black Myth: Wukong -->
+                                <li><a href="blue.html">Blue Girl Beer</a></li> <!-- Blue Girl Beer -->
+                                <li><a href="red.html">Urban Decay</a></li> <!-- Urban Decay -->
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="about.html">About G.E.M.</a>
+                            <ul class="sub-sm">
+                                <li><a href="life.html">Personal life</a></li> <!-- Personal life -->
+                                <li><a href="awards.html">Awards</a></li> <!-- Awards -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="loginbg" src="images/loginbg.jpg" width="100%" alt="loginbg"> <!-- Background image for the login section -->
+        <section id="form"> <!-- Section for login and registration forms -->
+            <div>
+                <fieldset id="login_in"> <!-- Fieldset for login form -->
+                    <legend><h1>Login In</h1></legend> <!-- Legend for the fieldset -->
+                    <form id="contactForm" method="post" enctype="multipart/form-data" action="Login_data.php" name="Login_form"> <!-- Login form -->
+                        <label for="uname">Username:</label> <!-- Username label -->
+                        <input type="text" id="uname" required> <!-- Username input -->
+                        <br />
+                        <label for="password">Password:</label> <!-- Password label -->
+                        <input type="password" id="password" required> <!-- Password input -->
+                        <br />  
+                        <button type="submit" onclick="alert('Successfully logged in'); window.location='buy.html';">Submit</button> <!-- Submit button with alert -->
+                    </form>
+                </fieldset> 
+            </div>
+            <div>
+                <fieldset id="register"> <!-- Fieldset for registration form -->
+                    <legend id="Register"><h1>Register</h1></legend> <!-- Legend for the fieldset -->
+                    <form id="regForm" method="post" enctype="multipart/form-data" action="read_data.php" name="register_form"> <!-- Registration form -->
+                        <label for="firstname">Firstname:</label> <!-- First name label -->
+                        <input type="text" id="firstname" required> <!-- First name input -->
+                        <br />
+                        <label for="lastname">Lastname:</label> <!-- Last name label -->
+                        <input type="text" id="lastname" required> <!-- Last name input -->
+                        <br />
+                        <label for="email">Email:</label> <!-- Email label -->
+                        <input type="email" id="email" required> <!-- Email input -->
+                        <br />
+                        <label for="tel">Telephone:</label> <!-- Telephone label -->
+                        <input type="tel" id="tel" required> <!-- Telephone input -->
+                        <br />
+                        <label for="dob">Date of Birth:</label> <!-- Date of birth label -->
+                        <input type="date" id="dob" required> <!-- Date of birth input -->
+                        <br />
+                        <label for="uname">Username:</label> <!-- Username label -->
+                        <input type="text" id="uname" required> <!-- Username input -->
+                        <br />
+                        <label for="password">Password:</label> <!-- Password label -->
+                        <input type="password" id="password" required> <!-- Password input -->
+                        <br />
+                        <button type="submit" id="lo-button" onclick="alert('Successfully registered')">Send</button> <!-- Submit button for registration -->
+                    </form>
+                </fieldset> 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 G.E.M. HK Fun Club. All rights reserved by AndyMak.</p> <!-- Footer content -->
+    </footer>
+</body>
+</html>

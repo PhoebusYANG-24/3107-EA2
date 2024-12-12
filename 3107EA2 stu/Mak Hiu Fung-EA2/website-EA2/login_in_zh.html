@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>鄧紫棋粉絲俱樂部</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS stylesheet -->
+    <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
+</head>
+<body>
+    <header>
+        <!-- <h1>G.E.M. Fun Club</h1> -->
+        <nav>
+            <ul class="header"> <!-- Main navigation menu -->
+                <li class="header-star">
+                    <a href="index_zh.html" id="home"><img src="images/head.png" width="150" height="40" alt="Website Logo"></a> <!-- Logo link -->
+                    <a href="https://www.facebook.com/G.E.M.OfficialPage/?locale=zh_HK" class="soc"><img src="images/fb.png" width="32" height="28" alt="Facebook"></a> <!-- Facebook icon -->
+                    <a href="https://www.instagram.com/gem0816/" class="soc"><img src="images/ig.png" width="30" height="28" alt="Instagram"></a> <!-- Instagram icon -->
+                    <a href="https://x.com/gemoving" class="soc"><img src="images/tw.png" width="30" height="28" alt="Twitter"></a> <!-- Twitter icon -->
+                </li>
+                <li class="type"><a href="events_zh.html">演唱會</a> <!-- Concert link -->
+                    <ul class="sub"> <!-- Submenu for concert months -->
+                        <li><a href="December_zh.html">十二月</a></li> <!-- December -->
+                        <li><a href="January_zh.html">一月</a></li> <!-- January -->
+                        <li><a href="February_zh.html">二月</a></li> <!-- February -->
+                    </ul>
+                </li>
+
+                <li class="type"><a href="Advertising_zh.html">廣告代言</a> <!-- Advertising endorsement link -->
+                    <ul class="sub">
+                        <li><a href="black_zh.html">百事可樂X黑神話之悟空</a></li> <!-- Pepsi X Black Myth: Wukong -->
+                        <li><a href="blue_zh.html">藍妹啤酒</a></li> <!-- Blue Girl Beer -->
+                        <li><a href="red_zh.html">衰敗城市</a></li> <!-- Urban Decay -->
+                    </ul>
+                </li>
+
+                <li class="type"><a href="about_zh.html">關於鄧紫棋</a> <!-- About G.E.M. link -->
+                    <ul class="sub">
+                        <li><a href="life_zh.html">個人生活</a></li> <!-- Personal life -->
+                        <li><a href="awards_zh.html">獎項</a></li> <!-- Awards -->
+                    </ul>
+                </li>
+                <li class="header-left">
+                    <a href="buy_zh.html"><img src="images/buy.png" width="30" height="30" alt="Buy Merchandise"></a> <!-- Buy merchandise -->
+                    <a href="index.html"><img src="images/chinese.png" width="30" height="30" alt="Switch to Chinese Version"></a> <!-- Switch to Chinese version -->
+                    <a href="login_in_zh.html"><img src="images/login_in.png" width="30" height="30" alt="Login"></a> <!-- Login link -->
+                    <img src="images/menu.png" id="menu" width="30" height="30" alt="Menu" onclick="toggleDisplay('header-sm','menu')"> <!-- Menu toggle icon -->
+                    <ul class="header-sm" id="header-sm"> <!-- Small screen menu -->
+                        <li class="type-sm"><a href="events.html">演唱會</a>
+                            <ul class="sub-sm">
+                                <li><a href="December_zh.html">十二月</a></li> <!-- December -->
+                                <li><a href="January_zh.html">一月</a></li> <!-- January -->
+                                <li><a href="February_zh.html">二月</a></li> <!-- February -->
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="Advertising_zh.html">廣告代言</a>
+                            <ul class="sub-sm">
+                                <li><a href="black_zh.html">百事可樂X黑神話之悟空</a></li> <!-- Pepsi X Black Myth: Wukong -->
+                                <li><a href="blue_zh.html">藍妹啤酒</a></li> <!-- Blue Girl Beer -->
+                                <li><a href="red_zh.html">衰敗城市</a></li> <!-- Urban Decay -->
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="about_zh.html">關於鄧紫棋</a>
+                            <ul class="sub-sm">
+                                <li><a href="life_zh.html">個人生活</a></li> <!-- Personal life -->
+                                <li><a href="awards_zh.html">獎項</a></li> <!-- Awards -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="loginbg" src="images/loginbg.jpg" width="100%" alt="loginbg"> <!-- Background image for the login section -->
+        <section id="form"> <!-- Section for login and registration forms -->
+            <div>
+                <fieldset id="login_in"> <!-- Fieldset for login form -->
+                    <legend><h1>登入</h1></legend> <!-- Legend for the fieldset -->
+                    <form id="contactForm" method="post" enctype="multipart/form-data" action="Login_data.php" name="Login_form"> <!-- Login form -->
+                        <label for="uname">用戶名稱:</label> <!-- Username label -->
+                        <input type="text" id="uname" required> <!-- Username input -->
+                        <br />
+                        <label for="password">用戶密碼:</label> <!-- Password label -->
+                        <input type="password" id="password" required> <!-- Password input -->
+                        <br />  
+                        <button type="submit" onclick="alert('成功登入'); window.location='buy_zh.html';">登入</button> <!-- Login button with alert -->
+                    </form>
+                </fieldset> 
+            </div>
+            <div>
+                <fieldset id="register"> <!-- Fieldset for registration form -->
+                    <legend id="Register"><h1>註冊</h1></legend> <!-- Legend for the fieldset -->
+                    <form id="regForm" method="post" enctype="multipart/form-data" action="read_data.php" name="register_form"> <!-- Registration form -->
+                        <label for="firstname">名字:</label> <!-- First name label -->
+                        <input type="text" id="firstname" required> <!-- First name input -->
+                        <br />
+                        <label for="lestname">姓氏:</label> <!-- Last name label -->
+                        <input type="text" id="lestname" required> <!-- Last name input -->
+                        <br />
+                        <label for="email">電郵:</label> <!-- Email label -->
+                        <input type="email" id="email" required> <!-- Email input -->
+                        <br />
+                        <label for="tel">電話:</label> <!-- Phone label -->
+                        <input type="tel" id="tel" required> <!-- Phone input -->
+                        <br />
+                        <label for="dob">生日日期:</label> <!-- Date of birth label -->
+                        <input type="date" id="dob" required> <!-- Date of birth input -->
+                        <br />
+                        <label for="uname">用戶名稱:</label> <!-- Username label -->
+                        <input type="text" id="uname" required> <!-- Username input -->
+                        <br />
+                        <label for="password">用戶密碼:</label> <!-- Password label -->
+                        <input type="password" id="password" required> <!-- Password input -->
+                        <br />
+                        <button type="submit" id="lo-button" onclick="alert('成功註冊')">發送</button> <!-- Submit button for registration -->
+                    </form>
+                </fieldset> 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 G.E.M. HK Funs Club. All rights reserved by AndyMak.</p> <!-- Footer content -->
+    </footer>
+</body>
+</html>

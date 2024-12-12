@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box; /* Ensure consistent box sizing across elements */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a clean font for the website */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header styles */
+header {
+    background: #333; /* Dark background for the header */
+    color: white; /* White text color */
+    padding: 5px 0; /* Padding for the header */
+}
+
+.header-star {
+    display: flex; /* Use flexbox for layout */
+}
+
+#home {
+    text-align: left; /* Left-aligned text */
+    display: block; /* Make link a block element for easier clicking */
+    padding: 0; 
+    margin: 5px 10px; /* Margin around the link */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.soc {
+    margin-top: 8px; /* Margin on top for social icons */
+} 
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 5px 0; /* Remove margin */
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: space-between; /* Space items evenly */
+}
+
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 0; /* Padding for better click area */
+}
+
+.header-sm {
+    background: #464545; /* Background color for smaller header */
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Arrange items in a column */
+    width: 50%; /* Width of the small header */
+    position: absolute; /* Position absolutely */
+    top: 74px; /* Position from the top */
+    right: 0; /* Align to the right */
+    margin: 0; /* No margin */
+    padding: 0 0 100% 0; /* Padding */
+    z-index: 1; /* Stack above other elements */
+}
+
+.type {
+    margin-top: 13px; /* Margin on top for type */
+}
+
+.sub {
+    background: #333; /* Background color for submenu */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange submenu items vertically */
+    margin-top: 10px; /* Margin on top */
+    padding: 5px 0; /* Padding for submenu */
+    margin-bottom: -10px; /* Negative margin to overlap */
+}
+
+/* Styles for submenu items */
+.sub li {
+    overflow: hidden; /* Hide overflow */
+    height: 0; /* Start with height 0 (hidden) */
+    transition: height 500ms ease; /* Smooth transition for height */
+}
+
+nav ul li:hover .sub li {
+    height: 40px; /* Expanded height for visible items on hover */
+}
+
+.sub li a {
+    color: white; /* White text color for submenu links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the whole area clickable */
+    padding: 0; /* Padding for submenu items */
+}
+
+#menu {
+    display: none; /* Hidden by default */
+}
+
+.type-sm {
+    background: #464545; /* Background color for small submenu */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    margin-top: 20px; /* Margin on top */
+    padding: 0; /* No padding */
+    margin-bottom: 10px; /* Margin at the bottom */
+}
+
+.sub-sm {
+    background: #5e5c5c; /* Background color for small submenu */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    margin-top: 10px; /* Margin on top */
+    padding: 5px 0; /* Padding for submenu */
+    margin-bottom: -10px; /* Negative margin to overlap */
+}
+
+.sub-sm li {
+    overflow: hidden; /* Hide overflow */
+    height: 0; /* Start with height 0 (hidden) */
+    transition: height 500ms ease; /* Smooth transition for height */
+}
+
+.type-sm:hover .sub-sm li {
+    height: 40px; /* Expanded height for visible items on hover */
+}
+
+.sub-sm li a {
+    color: white; /* White text color for submenu links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the whole area clickable */
+    padding: 0; /* Padding for submenu items */
+}
+
+main {
+    padding: 0; /* No padding for main content */
+}
+
+/* Image carousel styles */
+.box {
+    width: auto; /* Auto width for the box */
+    height: 650px; /* Fixed height for the box */
+    position: relative; /* Position relative for absolute children */
+}
+
+.box-img {
+    position: absolute; /* Absolute positioning for images */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease; /* Smooth transition for opacity */
+}
+
+.box-img:nth-child(1) {
+    opacity: 1; /* Show first image */
+}
+
+.box-left, .box-right {
+    position: absolute; /* Position absolutely */
+    width: 35px; /* Width for navigation buttons */
+    height: 70px; /* Height for navigation buttons */
+    color: #ccc; /* Color for arrows */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for center alignment */
+    text-align: center; /* Center align text */
+    line-height: 70px; /* Center the arrow vertically */
+    font-size: 27px; /* Font size for arrows */
+}
+
+.box-left:hover, .box-right:hover {
+    background-color: #00000050; /* Hover effect */
+    color: #fff; /* Change color on hover */
+}
+
+.box-right {
+    right: 0; /* Align to right */
+}
+
+.box-point > ul {
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    list-style: none; /* Remove default list styles */
+}
+
+.box-point li {
+    width: 14px; /* Width for point indicators */
+    height: 14px; /* Height for point indicators */
+    border-radius: 100%; /* Circle shape */
+    background-color: #ccc; /* Default background color */
+    float: left; /* Float left for horizontal arrangement */
+    margin-right: 10px; /* Space between points */
+}
+
+.box-point li:hover {
+    background-color: #fff; /* Hover effect */
+}
+
+.box-point {
+    position: absolute; /* Position absolutely */
+    bottom: 30px; /* Position from the bottom */
+    right: 100px; /* Position from the right */
+}
+
+.events {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 15px 300px; /* Margin around events */
+    padding: 10px 40px; /* Padding for events */
+    margin-bottom: 60px; /* Bottom margin */
+}
+
+.event {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertical alignment */
+    margin-bottom: 50px; /* Space between events */
+}
+
+legend {
+    font-size: 1.5em; /* Larger font size for legend */
+}
+
+.event .text {
+    flex: 1; /* Take available space */
+    margin-right: 20px; /* Space between text and image */
+    font-size: 1.2em; /* Font size for event text */
+}
+
+.event .image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.video-container {
+    position: relative; /* Relative positioning */
+    padding: 28%; /* Aspect ratio (16:9) */
+    overflow: hidden; /* Hide overflow */
+    width: auto; /* Auto width */
+}
+
+.video-container iframe {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: none; /* Remove border */
+}
+
+.more {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertical alignment */
+    margin: 30px; /* Margin around more section */
+}
+
+.more .text {
+    flex: 1; /* Take available space */
+    margin-left: 80px; /* Space between text and image */
+}
+
+.more .image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-right: 80px; /* Space on the right */
+}
+
+.map {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertical alignment */
+    margin: 30px; /* Margin around map section */
+}
+
+.map .text {
+    flex: 1; /* Take available space */
+    margin-left: 20px; /* Space between text and image */
+    margin-top: -100px; /* Negative margin for positioning */
+}
+
+.map .image {
+    flex: 1; /* Take available space */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 80px; /* Space on the right */
+}
+
+.header-left {
+    margin-top: 10px; /* Margin on top for header left */
+}
+
+.loginbg {
+    opacity: 0.4; /* Semi-transparent background */
+}
+
+#form {
+    display: flex; /* Use flexbox layout */
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width */
+    z-index: 1; /* Stack above other elements */
+    position: absolute; /* Position absolutely */
+    top: 200px; /* Position from the top */
+    left: 0; /* Align to left */
+}
+
+#login_in {
+    display: flex; /* Use flexbox layout */
+    position: relative; /* Relative positioning */
+    left: 350px; /* Position from left */
+    padding: 10px 70px 60px; /* Padding for login */
+    margin-bottom: 190px; /* Bottom margin */
+}
+
+#contactForm {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    position: relative; /* Relative positioning */
+    margin: 10px; /* Margin around form */
+}
+
+#regForm input {
+    position: relative; /* Relative positioning */
+    margin: 8px; /* Margin for input fields */
+}
+
+#register {
+    display: flex; /* Use flexbox layout */
+    position: relative; /* Relative positioning */
+    left: 650px; /* Position from left */
+    padding: 0 70px; /* Padding for register */
+    text-align: left; /* Left-aligned text */
+}
+
+#Register {
+    text-align: center; /* Center-aligned text */
+}
+
+#lo-button {
+    width: 160px; /* Width for login button */
+    position: relative; /* Relative positioning */
+    left: 50px; /* Position from left */
+}
+
+#out-item {
+    margin: 0 20%; /* Margin on left and right */
+}
+
+.buy-sreach {
+    position: relative; /* Relative positioning */
+    display: flex; /* Use flexbox layout */
+    width: 100%; /* Full width */
+    margin-bottom: 2%; /* Bottom margin */
+}
+
+#sreach-text {
+    display: none; /* Hidden by default */
+}
+
+.buy-item {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.buy-item h3 {
+    text-align: center; /* Center align text for item titles */
+}
+
+.priceform {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.number {
+    width: 30%; /* Width for number input */
+}
+
+.buy-button {
+    right: 0; /* Align to right */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center align text */
+    background: #333; /* Dark background for footer */
+    color: white; /* White text color */
+    padding: 10px 0; /* Padding for footer */
+    position: relative; /* For positioning */
+    width: 100%; /* Full width */
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    .type {
+        display: none; /* Hide type on smaller screens */
+    }
+    #menu {
+        display: inline-block; /* Show menu on smaller screens */
+    }
+    .more {
+        display: block; /* Show more section */
+    }
+    .more .text {
+        flex: 1; /* Take available space */
+        margin-left: 0; /* Remove left margin */
+    }
+    .map {
+        display: block; /* Show map section */
+    }
+    .map .text {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 100px; /* Add top margin */
+    }
+    .loginbg {
+        display: none; /* Hide login background */
+    }
+    #form {
+        top: 70px; /* Adjust top position */
+        position: relative; /* Position relative */
+        justify-content: space-around; /* Space around */
+    }
+    #login_in {
+        left: 30px; /* Adjust left position */
+    }
+}
+
+@media (max-width: 1400px) {
+    .events {
+        margin: 0; /* Remove margin */
+        margin-bottom: 60px; /* Bottom margin */
+    }
+    #register {
+        display: none; /* Hide register section */
+    }
+}

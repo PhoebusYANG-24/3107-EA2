@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>G.E.M. Fun Club</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS stylesheet -->
+    <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
+</head>
+<body>
+    <header>
+        <!-- <h1>G.E.M. Fun Club</h1> -->
+        <nav>
+            <ul class="header"> <!-- Main navigation menu -->
+                <li class="header-star">
+                    <a href="index.html" id="home"><img src="images/head.png" width="150" height="40" alt="Website Logo"></a> <!-- Logo link -->
+                    <a href="https://www.facebook.com/G.E.M.OfficialPage/?locale=zh_HK" class="soc"><img src="images/fb.png" width="32" height="28" alt="Facebook"></a> <!-- Facebook icon -->
+                    <a href="https://www.instagram.com/gem0816/" class="soc"><img src="images/ig.png" width="30" height="28" alt="Instagram"></a> <!-- Instagram icon -->
+                    <a href="https://x.com/gemoving" class="soc"><img src="images/tw.png" width="30" height="28" alt="Twitter"></a> <!-- Twitter icon -->
+                </li>
+                <li class="type"><a href="events.html">Concert</a> <!-- Concert link -->
+                    <ul class="sub"> <!-- Submenu for concert months -->
+                        <li><a href="December.html">December</a></li> <!-- December -->
+                        <li><a href="January.html">January</a></li> <!-- January -->
+                        <li><a href="February.html">February</a></li> <!-- February -->
+                    </ul>
+                </li>
+
+                <li class="type"><a href="Advertising.html">Advertising endorsement</a> <!-- Advertising endorsement link -->
+                    <ul class="sub">
+                        <li><a href="black.html">Pepsi X Black Myth: Wukong</a></li> <!-- Pepsi X Black Myth: Wukong -->
+                        <li><a href="blue.html">Blue Girl Beer</a></li> <!-- Blue Girl Beer -->
+                        <li><a href="red.html">Urban Decay</a></li> <!-- Urban Decay -->
+                    </ul>
+                </li>
+
+                <li class="type"><a href="about.html">About G.E.M.</a> <!-- About G.E.M. link -->
+                    <ul class="sub">
+                        <li><a href="life.html">Personal life</a></li> <!-- Personal life -->
+                        <li><a href="awards.html">Awards</a></li> <!-- Awards -->
+                    </ul>
+                </li>
+                <li class="header-left">
+                    <a href="buy.html"><img src="images/buy.png" width="30" height="30" alt="Buy Merchandise"></a> <!-- Buy merchandise -->
+                    <a href="index_zh.html"><img src="images/chinese.png" width="30" height="30" alt="Switch to Chinese Version"></a> <!-- Switch to Chinese version -->
+                    <a href="login_in.html"><img src="images/login_in.png" width="30" height="30" alt="Login"></a> <!-- Login link -->
+                    <img src="images/menu.png" id="menu" width="30" height="30" alt="Menu" onclick="toggleDisplay('header-sm','menu')"> <!-- Menu toggle icon -->
+                    <ul class="header-sm" id="header-sm"> <!-- Small screen menu -->
+                        <li class="type-sm"><a href="events.html">Concert</a>
+                            <ul class="sub-sm">
+                                <li><a href="December.html">December</a></li> <!-- December -->
+                                <li><a href="January.html">January</a></li> <!-- January -->
+                                <li><a href="February.html">February</a></li> <!-- February -->
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="Advertising.html">Advertising endorsement</a>
+                            <ul class="sub-sm">
+                                <li><a href="black.html">Pepsi X Black Myth: Wukong</a></li> <!-- Pepsi X Black Myth: Wukong -->
+                                <li><a href="blue.html">Blue Girl Beer</a></li> <!-- Blue Girl Beer -->
+                                <li><a href="red.html">Urban Decay</a></li> <!-- Urban Decay -->
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="about.html">About G.E.M.</a>
+                            <ul class="sub-sm">
+                                <li><a href="life.html">Personal life</a></li> <!-- Personal life -->
+                                <li><a href="awards.html">Awards</a></li> <!-- Awards -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="images/concert-header.jpg" width="100%" alt="Concert Header Image"> <!-- Header image for concerts -->
+            </div>
+            <fieldset class="events">
+                <legend><h1>December</h1></legend> <!-- December events header -->
+                <div class="event">
+                    <div class="text">
+                        <p>2025 February 15</p> <!-- Event date -->
+                    </div>
+                    <div class="text">
+                        <p>Bukit Jalil National Stadium</p> <!-- Venue name -->
+                    </div>
+
+                    <div class="image">
+                        <img src="images/2-1.png" width="300" height="300" alt="Bukit Jalil National Stadium"> <!-- Venue image -->
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 G.E.M. HK Fun Club. All rights reserved by AndyMak.</p> <!-- Footer content -->
+    </footer>
+</body>
+</html>

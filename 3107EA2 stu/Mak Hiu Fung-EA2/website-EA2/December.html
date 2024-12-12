@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>G.E.M. Fun Club</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS stylesheet -->
+    <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
+</head>
+<body>
+    <header>
+        <!-- <h1>G.E.M. Fun Club</h1> -->
+        <nav>
+            <ul class="header"> <!-- Main navigation menu -->
+                <li class="header-star">
+                    <a href="index.html" id="home"><img src="images/head.png" width="150" height="40" alt="Website Logo"></a> <!-- Logo link -->
+                    <a href="https://www.facebook.com/G.E.M.OfficialPage/?locale=zh_HK" class="soc"><img src="images/fb.png" width="32" height="28" alt="Facebook"></a> <!-- Facebook icon -->
+                    <a href="https://www.instagram.com/gem0816/" class="soc"><img src="images/ig.png" width="30" height="28" alt="Instagram"></a> <!-- Instagram icon -->
+                    <a href="https://x.com/gemoving" class="soc"><img src="images/tw.png" width="30" height="28" alt="Twitter"></a> <!-- Twitter icon -->
+                </li>
+                <li class="type"><a href="events.html">Concert</a>
+                    <ul class="sub"> <!-- Submenu for concert months -->
+                        <li><a href="December.html">December</a></li>
+                        <li><a href="January.html">January</a></li>
+                        <li><a href="February.html">February</a></li>
+                    </ul>
+                </li>
+
+                <li class="type"><a href="Advertising.html">Advertising Endorsement</a>
+                    <ul class="sub">
+                        <li><a href="black.html">Pepsi X Black Myth: Wukong</a></li>
+                        <li><a href="blue.html">Blue Girl Beer</a></li>
+                        <li><a href="red.html">Urban Decay</a></li>
+                    </ul>
+                </li>
+
+                <li class="type"><a href="about.html">About G.E.M.</a>
+                    <ul class="sub">
+                        <li><a href="life.html">Personal Life</a></li>
+                        <li><a href="awards.html">Awards</a></li>
+                    </ul>
+                </li>
+                <li class="header-left">
+                    <a href="buy.html"><img src="images/buy.png" width="30" height="30" alt="Buy Merchandise"></a>
+                    <a href="index_zh.html"><img src="images/chinese.png" width="30" height="30" alt="Chinese Version"></a>
+                    <a href="login_in.html"><img src="images/login_in.png" width="30" height="30" alt="Login"></a>
+                    <img src="images/menu.png" id="menu" width="30" height="30" alt="Menu" onclick="toggleDisplay('header-sm','menu')"> <!-- Menu toggle icon -->
+                    <ul class="header-sm" id="header-sm"> <!-- Small screen menu -->
+                        <li class="type-sm"><a href="events.html">Concert</a>
+                            <ul class="sub-sm">
+                                <li><a href="December.html">December</a></li>
+                                <li><a href="January.html">January</a></li>
+                                <li><a href="February.html">February</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="Advertising.html">Advertising Endorsement</a>
+                            <ul class="sub-sm">
+                                <li><a href="black.html">Pepsi X Black Myth: Wukong</a></li>
+                                <li><a href="blue.html">Blue Girl Beer</a></li>
+                                <li><a href="red.html">Urban Decay</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="type-sm"><a href="about.html">About G.E.M.</a>
+                            <ul class="sub-sm">
+                                <li><a href="life.html">Personal Life</a></li>
+                                <li><a href="awards.html">Awards</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <img src="images/concert-header.jpg" width="100%" alt="Concert Header"> <!-- Header image for concerts -->
+            </div>
+            <fieldset class="events"> <!-- Fieldset for events -->
+                <legend><h1>December</h1></legend> <!-- Legend for the December events -->
+                <div class="event"> <!-- Event details -->
+                    <div class="text">
+                        <p>2024 December 21-22</p> <!-- Event date -->
+                    </div>
+                    <div class="text">
+                        <p>Xiamen Egret Stadium</p> <!-- Venue location -->
+                    </div>
+                    <div class="image">
+                        <img src="images/12-1.png" width="300" height="300" alt="Xiamen Egret Stadium"> <!-- Venue image -->
+                    </div>
+                </div>
+                <div class="event"> <!-- Event details -->
+                    <div class="text">
+                        <p>2024 December 28-29, 31</p> <!-- Event dates -->
+                    </div>
+                    <div class="text">
+                        <p>Huizhou Olympic Stadium</p> <!-- Venue location -->
+                    </div>
+                    <div class="image">
+                        <img src="images/12-2.png" width="300" height="700" alt="Huizhou Olympic Stadium"> <!-- Venue image -->
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 G.E.M. HK Funs Club. All rights reserved by AndyMak.</p> <!-- Footer content -->
+    </footer>
+</body>
+</html>
